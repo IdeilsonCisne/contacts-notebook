@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :phones
   resources :contacts
   resources :kinds # resources cria 8 rotas de forma automática
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

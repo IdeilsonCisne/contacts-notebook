@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :kind_id %><br>
-    <%= f.text_field :kind_id %>
+    <%= collection_select(:contact, :kind_id, @kind_options_for_select, :id, :description) %>
   </div>
   <div class="field">
     <%= f.label :rmk %><br>

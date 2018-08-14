@@ -27,7 +27,7 @@
     display: block;
     margin: 0px 0px 5px;
 }
-.dark-matter div.field>label {
+.dark-matter label>span {
     float: left;
     width: 20%;
     text-align: right;

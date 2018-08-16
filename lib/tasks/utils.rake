@@ -14,22 +14,24 @@ namespace :utils do
     puts 'Creating contacts...[OK]'
 
     puts 'Creating addresses...'
-    10.times do |i|
+    Contact.all.each do |contact|
       Address.create!(
         street: Faker::Address.full_address,
         city: Faker::Address.city,
         state: Faker::Address.state,
-        contact: Contact.all.sample
+        contact: contact
       )
     end
     puts 'Creating addresses...[OK]'
 
     puts 'Creating phones...'
-    10.times do |i|
-      Phone.create!(
-        phone: Faker::PhoneNumber.phone_number,
-        contact: Contact.all.sample
-      )
+    Contact.all.each do |contact|
+      Random.rand(1..5).times do |i|
+        Phone.create!(
+          phone: Faker::PhoneNumber.phone_number,
+          contact: contact
+        )
+      end
     end
     puts 'Creating phones...[OK]'
     puts 'Populating database...[OK]'

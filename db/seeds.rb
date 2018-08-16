@@ -6,19 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-puts 'Populando banco de dados...'
+puts 'Populating database...'
 Kind.create!([
-  {description: "Amigo"},
-  {description: "Colega"},
-  {description: "Familía"}
+  {description: "Friend"},
+  {description: "Classmate"},
+  {description: "Family"}
   ])
-
-10.times do |contact|
-  Contact.create!(
-    name: Faker::Name.name ,
-    email: Faker::Internet.email,
-    kind_id: Kind.all.sample,
-    rmk: Faker::Lorem.paragraph([1,2,3,4,5].sample)
-  )
-end
-puts 'Populando banco de dados...[OK]'

@@ -23,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :kind_id %><br>
-    <%= collection_select(:contact, :kind_id, @kind_options_for_select, :id, :description) %>
+    <%= f.collection_select(:kind_id, @kind_options_for_select, :id, :description) %>
   </div>
 
   <%= f.fields_for :address do |address_fields| %>

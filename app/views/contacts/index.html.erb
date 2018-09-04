@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Contacts</h1>
+<h1><%= "#{t('messages.listing')} #{Contact.model_name.human(count: 2)}" %></h1>
 
 <table>
   <thead>
@@ -20,7 +20,7 @@
         <td><%= contact.kind.description %></td>
         <td><%= link_to t('buttons.show'), contact %></td>
         <td><%= link_to t('buttons.edit'), edit_contact_path(contact) %></td>
-        <td><%= link_to t('buttons.destroy'), contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('buttons.destroy'), contact, method: :delete, data: { confirm: t('messages.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,5 +1,6 @@
 "pt-BR":
   buttons:
+    new: Novo Contato
     show: "Mostrar"
     edit: "Editar"
     destroy: "Deletar"

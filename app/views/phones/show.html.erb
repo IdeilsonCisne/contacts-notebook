@@ -1,16 +1,14 @@
-<div class="dark-matter">
-  <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Phone:</strong>
-    <%= @phone.phone %>
-  </p>
+<p>
+  <strong>Phone:</strong>
+  <%= @phone.phone %>
+</p>
 
-  <p>
-    <strong>Contact:</strong>
-    <%= @phone.contact %>
-  </p>
+<p>
+  <strong>Contact:</strong>
+  <%= @phone.contact %>
+</p>
 
-  <%= link_to 'Edit', edit_phone_path(@phone) %> |
-  <%= link_to 'Back', phones_path %>
-</div>
+<%= link_to 'Edit', edit_phone_path(@phone) %> |
+<%= link_to 'Back', phones_path %>

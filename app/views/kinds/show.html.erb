@@ -1,11 +1,9 @@
-<div class="dark-matter">
-  <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @kind.description %>
-  </p>
+<p>
+  <strong>Description:</strong>
+  <%= @kind.description %>
+</p>
 
-  <%= link_to 'Edit', edit_kind_path(@kind) %> |
-  <%= link_to 'Back', kinds_path %>
-</div>
+<%= link_to 'Edit', edit_kind_path(@kind) %> |
+<%= link_to 'Back', kinds_path %>

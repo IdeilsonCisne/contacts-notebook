@@ -43,6 +43,15 @@ table {
     margin-top: 10px;
     font-weight: bold;
 }
+.dark-matter div.field_with_errors>label {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff0000;
+}
 .dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
     border: none;
     color: #525252;

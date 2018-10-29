@@ -1,16 +1,4 @@
 <%= form_for(@contact, html: { class: "dark-matter" }) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
-
-      <ul>
-      <% @contact.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <h1>New Contact</h1>
 
   <div class="field">
@@ -65,4 +53,16 @@
     <%= f.submit class: "button" %>
     <%= link_to 'Back', contacts_path, class: "button" %>
   </div>
+
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> Erros ocorreram:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 <% end %>

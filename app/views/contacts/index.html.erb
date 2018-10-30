@@ -14,7 +14,7 @@
 
     <tbody>
       <% @contacts.each do |contact| %>
-        <tr style="background: <%= cycle(' #808000', '#666600') %>">
+        <tr style="background: <%= cycle(' #394d00', '#020') %>">
           <td><%= contact.name %></td>
           <td><%= contact.email %></td>
           <td><%= contact.kind.description %></td>
@@ -25,9 +25,8 @@
       <% end %>
     </tbody>
   </table>
-  <br>  <br>
 
-  <%= paginate @contacts %>
-  <%= link_to t('buttons.new'), new_contact_path, class: "btn btn-primary" %>
-  <%= link_to t('buttons.home'), root_path, class: "btn btn-success" %>
+  <%= paginate @contacts %> <br>
+  <%= link_to t('buttons.new'), new_contact_path, class: "btn btn-success" %>
+  <%= link_to t('buttons.home'), root_path, class: "btn btn-primary" %>
 </siv>

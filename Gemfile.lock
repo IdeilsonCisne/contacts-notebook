@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionmailer (4.2.5)
       actionpack (= 4.2.5)
@@ -109,6 +110,7 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.2.5)
       sprockets-rails
+    rails-assets-notifyjs (0.4.2)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.9)
@@ -174,6 +176,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (>= 1.8.4)
   byebug
   cocoon
   coffee-rails (~> 4.1.0)
@@ -183,6 +186,7 @@ DEPENDENCIES
   kaminari
   kaminari-i18n
   rails (= 4.2.5)
+  rails-assets-notifyjs!
   rails-i18n (~> 4.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'bundler', '>= 1.8.4'
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff http://rails-i18n.org

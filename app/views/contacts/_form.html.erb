@@ -37,7 +37,7 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :phones, ">>"%><br>
+      <%= f.label :phones, "<span class='glyphicon glyphicon-phone-alt' aria-hidden='true'></span>".html_safe %><br>
       <%= link_to_add_association('[Adicionar Telefones]', f, :phones) %>
     </div>
     <br>

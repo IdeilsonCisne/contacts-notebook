@@ -2,3 +2,6 @@
   messages:
     confirm: Você tem certeza
     listing: Listando
+    created: Criado com sucesso!!
+    updated: Atualizado com sucesso!!
+    destroyed: Excluído com sucesso!!

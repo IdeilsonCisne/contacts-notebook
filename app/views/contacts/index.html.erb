@@ -1,5 +1,8 @@
 <div class="dark-matter">
-  <p id="notice"><%= notice %></p>
+  <script>
+    $.notify("<%= notice %>", "success")
+  </script>
+  
   <h1><%= "#{t('messages.listing')} #{@contacts.model.model_name.human(count: @contacts.count)}" %></h1>
 
   <table>
